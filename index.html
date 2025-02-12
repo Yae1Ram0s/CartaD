@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+    @keyframes heartbeat {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #f8e1e1, #ffd1dc);
+      margin: 0;
+      font-family: 'Times New Roman', serif;
+    }
+
+    .letter-container {
+      width: 800px;
+      padding: 20px;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    .letter {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .heart {
+      position: absolute;
+      color: #ff6b6b;
+      opacity: 0.1;
+      font-size: 150px;
+      z-index: 0;
+    }
+
+    .heart-1 { top: -20px; left: -20px; transform: rotate(-20deg); }
+    .heart-2 { bottom: -20px; right: -20px; transform: rotate(20deg); }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      color: #4a4a4a;
+      font-size: 1.2em;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    .title {
+      color: #ff4d4d;
+      font-size: 4rem;
+      text-align: center;
+      margin-bottom: 30px;
+      animation: heartbeat 2s infinite;
+      font-family: 'Dancing Script', cursive;
+    }
+
+    .paragraph {
+      margin-bottom: 20px;
+      animation: fadeIn 1.5s ease-out;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      color: rosybrown;
+    }
+
+    .signature {
+      text-align: right;
+      margin-top: 40px;
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.4em;
+      color: #ff4d4d;
+    }
+
+    .date {
+      text-align: right;
+      margin-bottom: 30px;
+      color: #888;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .highlight {
+      color: #ff4d4d;
+      font-weight: bold;
+    }
+
+    .question {
+      text-align: center;
+      margin: 40px 0;
+      font-size: 1.5em;
+      color: #ff4d4d;
+      font-family: 'Dancing Script', cursive;
+      animation: heartbeat 2s infinite;
+    }
+
+    @media (max-width: 850px) {
+      .letter-container {
+        width: 90%;
+        padding: 10px;
+      }
+      
+      .letter {
+        padding: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="letter-container">
+    <div class="letter">
+      <div class="heart heart-1">❤</div>
+      <div class="heart heart-2">❤</div>
+      
+      <div class="content">
+        <div class="date">12 de febrero de 2025</div>
+        
+        <div class="title">Para mi princesa </div>
+
+        <div class="paragraph">
+          Desde que llegaste a mi vida, todo ha cambiado de una forma que nunca imagine. Cada sonrisa tuya ilumina mi día, cada palabra tuya llena mi corazón de alegría, hasta los momentos mas simples se sienten especiales, cada momento a tu lado me hace darme cuenta de lo afortunado que soy por haberte conocido.
+        </div>
+
+        <div class="paragraph">
+          En este tiempo que hemos compartido, he descubierto en ti a una persona maravillosa, con una bondad que inspira y una fortaleza que admiro. Me has enseñado a ver la vida de una manera diferente, más brillante y llena de posibilidades. Tu forma de ser, tu sinceridad y tu ternura me han enamorado por completo.
+        </div>
+
+        <div class="paragraph">
+            Cada día que pasa, mis sentimientos por ti crecen más y más. Tu presencia en mi vida es el regalo más hermoso que podría haber pedido e inesperado a la vez.
+          </div>
+
+        <div class="paragraph">
+          Quiero construir contigo una relación basada en el respeto mutuo, la confianza y la comunicación sincera. Sueño con crear juntos un amor que nos haga crecer como personas, que nos impulse a ser mejores cada día, y que nos permita apoyarnos en los momentos difíciles y celebrar juntos las alegrías. Lo mas importante que quiero compartir contigo mis sueños, mis metas, mis alegrías y también mis preocupaciones.
+        </div>
+
+        <div class="paragraph">
+          Me comprometo a estar a tu lado, a escucharte, a entenderte, a respetarte y a cuidar de este amor con dedicación y ternura. Prometo ser tu apoyo, tu confidente, y tu compañero en este hermoso viaje que es la vida. Para una relacion sana, honesta y llena de amor verdadero.
+        </div>
+
+
+        <div class="paragraph">
+            Quizás te preguntes por qué escribo esto aquí y no en papel. Es porque quiero que estas palabras no se borren con el tiempo, que puedas volver a leerlas dentro de años y sentir lo mismo que siento ahora. Porque el amor, cuando es verdadero, no se desgasta, no se rompe, no desaparece… simplemente crece.
+
+        <div class="signature">
+          Con todo mi amor<br>
+          YL
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
